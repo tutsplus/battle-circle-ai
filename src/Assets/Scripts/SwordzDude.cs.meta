@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8add711dd88c5664fb9ae1ef3f792ad6
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - animated: {instanceID: 0}
+  - weaponHand: {instanceID: 0}
+  - startingWeaponPrefab: {instanceID: 0}
+  - mainWeapon: {instanceID: 0}
+  - bloodPrefab: {instanceID: 0}
+  - dodgeEffect: {instanceID: 0}
+  - telegraphDecal: {instanceID: 0}
+  - swingSound: {fileID: 8300000, guid: 89e313901c6c88c43872a27b97cb0457, type: 3}
+  - dodgeSound: {fileID: 8300000, guid: 35218d379e7bbcd4fb209decffa8b099, type: 3}
+  executionOrder: 200
+  icon: {instanceID: 0}
+  userData: 
