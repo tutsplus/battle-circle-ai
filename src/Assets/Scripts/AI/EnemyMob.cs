@@ -11,14 +11,9 @@ public class EnemyMob : MonoBehaviour
 	These rules cause the pack members to behave in a way that resembles real wolves, circling up around the animal,
 	and when the prey tries to make a break for it, one wolf sometimes circles around and sets up an ambush, no communication required.
 	*/
-	
-	public int enemyLevel = 1;
-	public int enemyType = 1;
-	
+
 	public float attackDistance = 1.0f;
 	public float dangerDistance = 2.0f;
-	public float minPreyDistance = 2.0f;
-	public float maxWolfDistance = 10.0f;
 
 	public float trackSpeed = 0.1f;
 	public float attackRate = 10.0f;
@@ -27,7 +22,7 @@ public class EnemyMob : MonoBehaviour
 	private Dude prey;
 	private SwordzDude preySwordz;
 	
-	private Dude dude;
+	public Dude dude { get; private set; }
 	private SwordzDude swordzDude;
 	private Damageable damageable;
 	private Vector3 destination;
@@ -254,7 +249,7 @@ public class EnemyMob : MonoBehaviour
 	GameObject GetClosestTarget()
 	{
 		GameObject[] allPrey = GameObject.FindGameObjectsWithTag("Player");
-		GameObject target;
+		GameObject target = null;
 
 		var closestDist = Mathf.Infinity;
 		foreach(var p in allPrey)

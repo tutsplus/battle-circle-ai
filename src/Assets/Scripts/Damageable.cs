@@ -220,9 +220,11 @@ public class Damageable : MonoBehaviour
 	
 	public void AddHealth(int hp)
 	{
+		/*
 		// heals!
 		var heals = Resources.Load("Effects/effect_heal");
 		Instantiate(heals, transform.position, transform.rotation);
+		*/
 		
 		health += hp;
 		if(health > maxHealth)
